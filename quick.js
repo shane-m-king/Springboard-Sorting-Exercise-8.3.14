@@ -24,19 +24,21 @@ function pivot(arr, start = 0, end = arr.length - 1) {
 quickSort accepts an array, left index, and right index
 */
 
-function quickSort(arr) {
-  if (arr.length <= 1) {
-    return arr;
+function quickSort(arr, left = 0, right = arr.length - 1) {
+  if (left >= right) {
+    return;
   }
-  let index = pivot(arr);
+  const pivotIndex = pivot(arr, left, right);
 
-  const left = arr.slice(0, index);
-  const right = arr.slice(index + 1);
+  quickSort(arr, left, pivotIndex - 1);
 
-  const newLeft = quickSort(left);
-  const newRight = quickSort(right);
+  quickSort(arr, pivotIndex + 1, right);
 
-  return [...newLeft, arr[index], ...newRight];
+  return arr;
 }
+
+console.log(
+  quickSort([45, 245, 57, 8958, 2345, 54, 23, 41, 73, 23, 3425, 74576, 2])
+);
 
 module.exports = { pivot, quickSort };

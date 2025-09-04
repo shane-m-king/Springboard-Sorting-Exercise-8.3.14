@@ -1,14 +1,23 @@
 {
   "name": "dsa-sorting",
   "version": "1.0.0",
-  "description": "",
+  "description": "Submission for Sorting Exercise 8.3.14 for Springboard's Software Engineering Bootcamp",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "jest": "^29.7.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shane-m-king/Springboard-Sorting-Exercise-8.3.14.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/shane-m-king/Springboard-Sorting-Exercise-8.3.14/issues"
+  },
+  "homepage": "https://github.com/shane-m-king/Springboard-Sorting-Exercise-8.3.14#readme"
 }
